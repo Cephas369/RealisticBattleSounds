@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="module_sound">
+  <module_sounds>
+
+
+	<module_sound name="event:/voice/combat/cough" is_2d="false" sound_category="mission_combat">
+		<variation path="cough_01.mp3"  weight="2.0"/>
+		<variation path="cough_02.mp3"  weight="2.0"/>
+		<variation path="cough_03.mp3"  weight="2.0"/>
+		<variation path="cough_04.mp3"  weight="2.0"/>
+		<variation path="cough_05.mp3"  weight="1.0"/>
+		<variation path="cough_06.mp3"  weight="1.0"/>
+		<variation path="cough_07.mp3"  weight="1.0"/>
+		<variation path="cough_08.mp3"  weight="1.0"/>
+		<variation path="cough_09.mp3"  weight="1.0"/>
+		<variation path="cough_10.mp3"  weight="1.0"/>
+		<variation path="cough_11.mp3"  weight="1.0"/>
+		<variation path="cough_12.mp3"  weight="1.0"/>
+		<variation path="cough_13.mp3"  weight="1.0"/>
+	</module_sound>
+	<module_sound name="event:/voice/combat/insult" is_2d="false" sound_category="mission_combat">
+		<variation path="man_insult_01.mp3"  weight="2.0"/>
+		<variation path="man_insult_02.mp3"  weight="2.0"/>
+		<variation path="man_insult_03.mp3"  weight="2.0"/>
+		<variation path="man_insult_04.mp3"  weight="2.0"/>
+		<variation path="man_insult_05.mp3"  weight="1.0"/>
+		<variation path="man_insult_06.mp3"  weight="1.0"/>
+		<variation path="man_insult_07.mp3"  weight="1.0"/>
+		<variation path="man_insult_08.mp3"  weight="1.0"/>
+		<variation path="man_insult_09.mp3"  weight="1.0"/>
+		<variation path="man_insult_10.mp3"  weight="1.0"/>
+		<variation path="man_insult_11.mp3"  weight="1.0"/>
+		<variation path="man_insult_12.mp3"  weight="1.0"/>
+		<variation path="man_insult_13.mp3"  weight="1.0"/>
+		<variation path="man_insult_14.mp3"  weight="1.0"/>
+		<variation path="man_insult_15.mp3"  weight="1.0"/>
+		<variation path="man_insult_16.mp3"  weight="1.0"/>
+		<variation path="man_insult_17.mp3"  weight="1.0"/>
+		<variation path="man_insult_18.mp3"  weight="1.0"/>
+		<variation path="man_insult_19.mp3"  weight="1.0"/>
+		<variation path="man_insult_20.mp3"  weight="1.0"/>
+		<variation path="man_insult_21.mp3"  weight="1.0"/>
+		<variation path="man_insult_22.mp3"  weight="1.0"/>
+		<variation path="man_insult_23.mp3"  weight="1.0"/>
+		<variation path="man_insult_24.mp3"  weight="1.0"/>
+	</module_sound>
+	
+
+
+  </module_sounds>
+
+</base>

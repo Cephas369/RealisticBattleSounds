@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="module_sound">
+  <module_sounds>
+  
+	<module_sound name="event:/voice/combat/horse/01/pain" is_2d="false" sound_category="mission_voice">
+		<variation path="horsepain-01.mp3"  weight="1.0"/>
+		<variation path="horsepain-01.mp3"  weight="1.0"/>
+		<variation path="horsepain-02.mp3"  weight="1.0"/>
+		<variation path="horsepain-03.mp3"  weight="1.0"/>
+		<variation path="horsepain-04.mp3"  weight="1.0"/>
+		<variation path="horsepain-05.mp3"  weight="1.0"/>
+		<variation path="horsepain-06.mp3"  weight="1.0"/>
+		<variation path="horsepain-07.mp3"  weight="1.0"/>
+		<variation path="horsepain-08.mp3"  weight="1.0"/>
+		<variation path="horsepain-09.mp3"  weight="1.0"/>
+		<variation path="horsepain-10.mp3"  weight="1.0"/>
+		<variation path="horsepain-11.mp3"  weight="1.0"/>
+		<variation path="horsepain-12.mp3"  weight="1.0"/>
+		<variation path="horsepain-13.mp3"  weight="1.0"/>
+		<variation path="horsepain-14.mp3"  weight="1.0"/>
+		<variation path="horsepain-15.mp3"  weight="1.0"/>
+		<variation path="horsepain-16.mp3"  weight="1.0"/>
+		<variation path="horsepain-17.mp3"  weight="1.0"/>
+		<variation path="horsepain-18.mp3"  weight="1.0"/>
+	</module_sound>
+		<module_sound name="event:/voice/combat/horse/02/pain" is_2d="false" sound_category="mission_voice">
+		<variation path="horsepain-01.mp3"  weight="1.0"/>
+		<variation path="horsepain-01.mp3"  weight="1.0"/>
+		<variation path="horsepain-02.mp3"  weight="1.0"/>
+		<variation path="horsepain-03.mp3"  weight="1.0"/>
+		<variation path="horsepain-04.mp3"  weight="1.0"/>
+		<variation path="horsepain-05.mp3"  weight="1.0"/>
+		<variation path="horsepain-06.mp3"  weight="1.0"/>
+		<variation path="horsepain-07.mp3"  weight="1.0"/>
+		<variation path="horsepain-08.mp3"  weight="1.0"/>
+		<variation path="horsepain-09.mp3"  weight="1.0"/>
+		<variation path="horsepain-10.mp3"  weight="1.0"/>
+		<variation path="horsepain-11.mp3"  weight="1.0"/>
+		<variation path="horsepain-12.mp3"  weight="1.0"/>
+		<variation path="horsepain-13.mp3"  weight="1.0"/>
+		<variation path="horsepain-14.mp3"  weight="1.0"/>
+		<variation path="horsepain-15.mp3"  weight="1.0"/>
+		<variation path="horsepain-16.mp3"  weight="1.0"/>
+		<variation path="horsepain-17.mp3"  weight="1.0"/>
+		<variation path="horsepain-18.mp3"  weight="1.0"/>
+	</module_sound>
+		<module_sound name="event:/voice/combat/horse/03/pain" is_2d="false" sound_category="mission_voice">
+		<variation path="horsepain-01.mp3"  weight="1.0"/>
+		<variation path="horsepain-01.mp3"  weight="1.0"/>
+		<variation path="horsepain-02.mp3"  weight="1.0"/>
+		<variation path="horsepain-03.mp3"  weight="1.0"/>
+		<variation path="horsepain-04.mp3"  weight="1.0"/>
+		<variation path="horsepain-05.mp3"  weight="1.0"/>
+		<variation path="horsepain-06.mp3"  weight="1.0"/>
+		<variation path="horsepain-07.mp3"  weight="1.0"/>
+		<variation path="horsepain-08.mp3"  weight="1.0"/>
+		<variation path="horsepain-09.mp3"  weight="1.0"/>
+		<variation path="horsepain-10.mp3"  weight="1.0"/>
+		<variation path="horsepain-11.mp3"  weight="1.0"/>
+		<variation path="horsepain-12.mp3"  weight="1.0"/>
+		<variation path="horsepain-13.mp3"  weight="1.0"/>
+		<variation path="horsepain-14.mp3"  weight="1.0"/>
+		<variation path="horsepain-15.mp3"  weight="1.0"/>
+		<variation path="horsepain-16.mp3"  weight="1.0"/>
+		<variation path="horsepain-17.mp3"  weight="1.0"/>
+		<variation path="horsepain-18.mp3"  weight="1.0"/>
+	</module_sound>
+		<module_sound name="event:/voice/combat/horse/04/pain" is_2d="false" sound_category="mission_voice">
+		<variation path="horsepain-01.mp3"  weight="1.0"/>
+		<variation path="horsepain-01.mp3"  weight="1.0"/>
+		<variation path="horsepain-02.mp3"  weight="1.0"/>
+		<variation path="horsepain-03.mp3"  weight="1.0"/>
+		<variation path="horsepain-04.mp3"  weight="1.0"/>
+		<variation path="horsepain-05.mp3"  weight="1.0"/>
+		<variation path="horsepain-06.mp3"  weight="1.0"/>
+		<variation path="horsepain-07.mp3"  weight="1.0"/>
+		<variation path="horsepain-08.mp3"  weight="1.0"/>
+		<variation path="horsepain-09.mp3"  weight="1.0"/>
+		<variation path="horsepain-10.mp3"  weight="1.0"/>
+		<variation path="horsepain-11.mp3"  weight="1.0"/>
+		<variation path="horsepain-12.mp3"  weight="1.0"/>
+		<variation path="horsepain-13.mp3"  weight="1.0"/>
+		<variation path="horsepain-14.mp3"  weight="1.0"/>
+		<variation path="horsepain-15.mp3"  weight="1.0"/>
+		<variation path="horsepain-16.mp3"  weight="1.0"/>
+		<variation path="horsepain-17.mp3"  weight="1.0"/>
+		<variation path="horsepain-18.mp3"  weight="1.0"/>
+	</module_sound>
+	
+	
+	
+	
+		<module_sound name="event:/voice/combat/horse/01/death" is_2d="false" sound_category="mission_voice">
+		<variation path="horsepain-01.mp3"  weight="1.0"/>
+		<variation path="horsepain-01.mp3"  weight="1.0"/>
+		<variation path="horsepain-02.mp3"  weight="1.0"/>
+		<variation path="horsepain-03.mp3"  weight="1.0"/>
+		<variation path="horsepain-04.mp3"  weight="1.0"/>
+		<variation path="horsepain-05.mp3"  weight="1.0"/>
+		<variation path="horsepain-06.mp3"  weight="1.0"/>
+		<variation path="horsepain-07.mp3"  weight="1.0"/>
+		<variation path="horsepain-08.mp3"  weight="1.0"/>
+		<variation path="horsepain-09.mp3"  weight="1.0"/>
+		<variation path="horsepain-10.mp3"  weight="1.0"/>
+		<variation path="horsepain-11.mp3"  weight="1.0"/>
+		<variation path="horsepain-12.mp3"  weight="1.0"/>
+		<variation path="horsepain-13.mp3"  weight="1.0"/>
+		<variation path="horsepain-14.mp3"  weight="1.0"/>
+		<variation path="horsepain-15.mp3"  weight="1.0"/>
+		<variation path="horsepain-16.mp3"  weight="1.0"/>
+		<variation path="horsepain-17.mp3"  weight="1.0"/>
+		<variation path="horsepain-18.mp3"  weight="1.0"/>
+	</module_sound>
+		<module_sound name="event:/voice/combat/horse/02/death" is_2d="false" sound_category="mission_voice">
+		<variation path="horsepain-01.mp3"  weight="1.0"/>
+		<variation path="horsepain-01.mp3"  weight="1.0"/>
+		<variation path="horsepain-02.mp3"  weight="1.0"/>
+		<variation path="horsepain-03.mp3"  weight="1.0"/>
+		<variation path="horsepain-04.mp3"  weight="1.0"/>
+		<variation path="horsepain-05.mp3"  weight="1.0"/>
+		<variation path="horsepain-06.mp3"  weight="1.0"/>
+		<variation path="horsepain-07.mp3"  weight="1.0"/>
+		<variation path="horsepain-08.mp3"  weight="1.0"/>
+		<variation path="horsepain-09.mp3"  weight="1.0"/>
+		<variation path="horsepain-10.mp3"  weight="1.0"/>
+		<variation path="horsepain-11.mp3"  weight="1.0"/>
+		<variation path="horsepain-12.mp3"  weight="1.0"/>
+		<variation path="horsepain-13.mp3"  weight="1.0"/>
+		<variation path="horsepain-14.mp3"  weight="1.0"/>
+		<variation path="horsepain-15.mp3"  weight="1.0"/>
+		<variation path="horsepain-16.mp3"  weight="1.0"/>
+		<variation path="horsepain-17.mp3"  weight="1.0"/>
+		<variation path="horsepain-18.mp3"  weight="1.0"/>
+	</module_sound>
+		<module_sound name="event:/voice/combat/horse/03/death" is_2d="false" sound_category="mission_voice">
+		<variation path="horsepain-01.mp3"  weight="1.0"/>
+		<variation path="horsepain-01.mp3"  weight="1.0"/>
+		<variation path="horsepain-02.mp3"  weight="1.0"/>
+		<variation path="horsepain-03.mp3"  weight="1.0"/>
+		<variation path="horsepain-04.mp3"  weight="1.0"/>
+		<variation path="horsepain-05.mp3"  weight="1.0"/>
+		<variation path="horsepain-06.mp3"  weight="1.0"/>
+		<variation path="horsepain-07.mp3"  weight="1.0"/>
+		<variation path="horsepain-08.mp3"  weight="1.0"/>
+		<variation path="horsepain-09.mp3"  weight="1.0"/>
+		<variation path="horsepain-10.mp3"  weight="1.0"/>
+		<variation path="horsepain-11.mp3"  weight="1.0"/>
+		<variation path="horsepain-12.mp3"  weight="1.0"/>
+		<variation path="horsepain-13.mp3"  weight="1.0"/>
+		<variation path="horsepain-14.mp3"  weight="1.0"/>
+		<variation path="horsepain-15.mp3"  weight="1.0"/>
+		<variation path="horsepain-16.mp3"  weight="1.0"/>
+		<variation path="horsepain-17.mp3"  weight="1.0"/>
+		<variation path="horsepain-18.mp3"  weight="1.0"/>
+	</module_sound>
+		<module_sound name="event:/voice/combat/horse/04/death" is_2d="false" sound_category="mission_voice">
+		<variation path="horsepain-01.mp3"  weight="1.0"/>
+		<variation path="horsepain-01.mp3"  weight="1.0"/>
+		<variation path="horsepain-02.mp3"  weight="1.0"/>
+		<variation path="horsepain-03.mp3"  weight="1.0"/>
+		<variation path="horsepain-04.mp3"  weight="1.0"/>
+		<variation path="horsepain-05.mp3"  weight="1.0"/>
+		<variation path="horsepain-06.mp3"  weight="1.0"/>
+		<variation path="horsepain-07.mp3"  weight="1.0"/>
+		<variation path="horsepain-08.mp3"  weight="1.0"/>
+		<variation path="horsepain-09.mp3"  weight="1.0"/>
+		<variation path="horsepain-10.mp3"  weight="1.0"/>
+		<variation path="horsepain-11.mp3"  weight="1.0"/>
+		<variation path="horsepain-12.mp3"  weight="1.0"/>
+		<variation path="horsepain-13.mp3"  weight="1.0"/>
+		<variation path="horsepain-14.mp3"  weight="1.0"/>
+		<variation path="horsepain-15.mp3"  weight="1.0"/>
+		<variation path="horsepain-16.mp3"  weight="1.0"/>
+		<variation path="horsepain-17.mp3"  weight="1.0"/>
+		<variation path="horsepain-18.mp3"  weight="1.0"/>
+	</module_sound>
+	
+	
+			<module_sound name="event:/voice/combat/horse/01/neigh" is_2d="false" sound_category="mission_voice">
+		<variation path="horsepain-01.mp3"  weight="1.0"/>
+		<variation path="horsepain-01.mp3"  weight="1.0"/>
+		<variation path="horsepain-02.mp3"  weight="1.0"/>
+		<variation path="horsepain-03.mp3"  weight="1.0"/>
+		<variation path="horsepain-04.mp3"  weight="1.0"/>
+		<variation path="horsepain-05.mp3"  weight="1.0"/>
+		<variation path="horsepain-06.mp3"  weight="1.0"/>
+		<variation path="horsepain-07.mp3"  weight="1.0"/>
+		<variation path="horsepain-08.mp3"  weight="1.0"/>
+		<variation path="horsepain-09.mp3"  weight="1.0"/>
+		<variation path="horsepain-10.mp3"  weight="1.0"/>
+		<variation path="horsepain-11.mp3"  weight="1.0"/>
+		<variation path="horsepain-12.mp3"  weight="1.0"/>
+		<variation path="horsepain-13.mp3"  weight="1.0"/>
+		<variation path="horsepain-14.mp3"  weight="1.0"/>
+		<variation path="horsepain-15.mp3"  weight="1.0"/>
+		<variation path="horsepain-16.mp3"  weight="1.0"/>
+		<variation path="horsepain-17.mp3"  weight="1.0"/>
+		<variation path="horsepain-18.mp3"  weight="1.0"/>
+	</module_sound>
+		<module_sound name="event:/voice/combat/horse/02/neigh" is_2d="false" sound_category="mission_voice">
+		<variation path="horsepain-01.mp3"  weight="1.0"/>
+		<variation path="horsepain-01.mp3"  weight="1.0"/>
+		<variation path="horsepain-02.mp3"  weight="1.0"/>
+		<variation path="horsepain-03.mp3"  weight="1.0"/>
+		<variation path="horsepain-04.mp3"  weight="1.0"/>
+		<variation path="horsepain-05.mp3"  weight="1.0"/>
+		<variation path="horsepain-06.mp3"  weight="1.0"/>
+		<variation path="horsepain-07.mp3"  weight="1.0"/>
+		<variation path="horsepain-08.mp3"  weight="1.0"/>
+		<variation path="horsepain-09.mp3"  weight="1.0"/>
+		<variation path="horsepain-10.mp3"  weight="1.0"/>
+		<variation path="horsepain-11.mp3"  weight="1.0"/>
+		<variation path="horsepain-12.mp3"  weight="1.0"/>
+		<variation path="horsepain-13.mp3"  weight="1.0"/>
+		<variation path="horsepain-14.mp3"  weight="1.0"/>
+		<variation path="horsepain-15.mp3"  weight="1.0"/>
+		<variation path="horsepain-16.mp3"  weight="1.0"/>
+		<variation path="horsepain-17.mp3"  weight="1.0"/>
+		<variation path="horsepain-18.mp3"  weight="1.0"/>
+	</module_sound>
+		<module_sound name="event:/voice/combat/horse/03/neigh" is_2d="false" sound_category="mission_voice">
+		<variation path="horsepain-01.mp3"  weight="1.0"/>
+		<variation path="horsepain-01.mp3"  weight="1.0"/>
+		<variation path="horsepain-02.mp3"  weight="1.0"/>
+		<variation path="horsepain-03.mp3"  weight="1.0"/>
+		<variation path="horsepain-04.mp3"  weight="1.0"/>
+		<variation path="horsepain-05.mp3"  weight="1.0"/>
+		<variation path="horsepain-06.mp3"  weight="1.0"/>
+		<variation path="horsepain-07.mp3"  weight="1.0"/>
+		<variation path="horsepain-08.mp3"  weight="1.0"/>
+		<variation path="horsepain-09.mp3"  weight="1.0"/>
+		<variation path="horsepain-10.mp3"  weight="1.0"/>
+		<variation path="horsepain-11.mp3"  weight="1.0"/>
+		<variation path="horsepain-12.mp3"  weight="1.0"/>
+		<variation path="horsepain-13.mp3"  weight="1.0"/>
+		<variation path="horsepain-14.mp3"  weight="1.0"/>
+		<variation path="horsepain-15.mp3"  weight="1.0"/>
+		<variation path="horsepain-16.mp3"  weight="1.0"/>
+		<variation path="horsepain-17.mp3"  weight="1.0"/>
+		<variation path="horsepain-18.mp3"  weight="1.0"/>
+	</module_sound>
+		<module_sound name="event:/voice/combat/horse/04/neigh" is_2d="false" sound_category="mission_voice">
+		<variation path="horsepain-01.mp3"  weight="1.0"/>
+		<variation path="horsepain-01.mp3"  weight="1.0"/>
+		<variation path="horsepain-02.mp3"  weight="1.0"/>
+		<variation path="horsepain-03.mp3"  weight="1.0"/>
+		<variation path="horsepain-04.mp3"  weight="1.0"/>
+		<variation path="horsepain-05.mp3"  weight="1.0"/>
+		<variation path="horsepain-06.mp3"  weight="1.0"/>
+		<variation path="horsepain-07.mp3"  weight="1.0"/>
+		<variation path="horsepain-08.mp3"  weight="1.0"/>
+		<variation path="horsepain-09.mp3"  weight="1.0"/>
+		<variation path="horsepain-10.mp3"  weight="1.0"/>
+		<variation path="horsepain-11.mp3"  weight="1.0"/>
+		<variation path="horsepain-12.mp3"  weight="1.0"/>
+		<variation path="horsepain-13.mp3"  weight="1.0"/>
+		<variation path="horsepain-14.mp3"  weight="1.0"/>
+		<variation path="horsepain-15.mp3"  weight="1.0"/>
+		<variation path="horsepain-16.mp3"  weight="1.0"/>
+		<variation path="horsepain-17.mp3"  weight="1.0"/>
+		<variation path="horsepain-18.mp3"  weight="1.0"/>
+	</module_sound>
+
+  </module_sounds>
+
+</base>

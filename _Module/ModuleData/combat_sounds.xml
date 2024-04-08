@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="module_sound">
+  <module_sounds>
+
+	<module_sound name="blunt_armor" is_2d="false" sound_category="mission_combat" >
+		<variation path="blunt_armor1.mp3"  weight="1.0"/>
+		<variation path="blunt_armor2.mp3"  weight="1.0"/>
+		<variation path="blunt_armor3.mp3"  weight="1.0"/>
+		<variation path="blunt_armor4.mp3"  weight="1.0"/>
+		<variation path="blunt_armor5.mp3"  weight="1.0"/>
+	</module_sound>
+	
+	<module_sound name="blunt_armor_crit" is_2d="false" sound_category="mission_combat" >
+		<variation path="blunt_armor_crit1.mp3"  weight="1.0"/>
+		<variation path="blunt_armor_crit2.mp3"  weight="1.0"/>
+	</module_sound>
+	
+	
+	<module_sound name="flesh_cut" is_2d="false" sound_category="mission_combat">
+		<variation path="flesh_cut1.mp3"  weight="1.0"/>
+		<variation path="flesh_cut2.mp3"  weight="1.0"/>
+		<variation path="flesh_cut3.mp3"  weight="1.0"/>
+		<variation path="flesh_cut4.mp3"  weight="1.0"/>
+		<variation path="flesh_cut5.mp3"  weight="1.0"/>
+		<variation path="flesh_cut6.mp3"  weight="1.0"/>
+		<variation path="flesh_cut7.mp3"  weight="1.0"/>
+	</module_sound>
+	
+	
+	<module_sound name="flesh_hit_crit" is_2d="false" sound_category="mission_combat">
+		<variation path="flesh_hit_crit1.mp3"  weight="1.0"/>
+		<variation path="flesh_hit_crit2.mp3"  weight="1.0"/>
+	</module_sound>
+	
+	
+	
+	<module_sound name="flesh_blunt" is_2d="false" sound_category="mission_combat">
+		<variation path="flesh_blunt1.mp3"  weight="1.0"/>
+		<variation path="flesh_blunt2.mp3"  weight="1.0"/>
+		<variation path="flesh_blunt3.mp3"  weight="1.0"/>
+	</module_sound>
+	
+	
+	<module_sound name="flesh_pierce" is_2d="false" sound_category="mission_combat">
+		<variation path="flesh_pierce1.mp3"  weight="1.0"/>
+		<variation path="flesh_pierce2.mp3"  weight="1.0"/>
+		<variation path="flesh_cut3.mp3"  weight="1.0"/>
+		<variation path="flesh_cut4.mp3"  weight="1.0"/>
+		<variation path="leather_hit5.mp3"  weight="1.0"/>
+		<variation path="leather_hit6.mp3"  weight="1.0"/>
+	</module_sound>
+	
+	<module_sound name="flesh_pierce_crit" is_2d="false" sound_category="mission_combat">
+		<variation path="flesh_pierce_crit1.mp3"  weight="1.0"/>
+		<variation path="flesh_pierce_crit2.mp3"  weight="1.0"/>
+	</module_sound>
+	
+	
+	<module_sound name="leather_blunt" is_2d="false" sound_category="mission_combat">
+		<variation path="leather_blunt1.mp3"  weight="1.0"/>
+		<variation path="leather_blunt2.mp3"  weight="1.0"/>
+		<variation path="leather_blunt3.mp3"  weight="1.0"/>
+		<variation path="leather_blunt4.mp3"  weight="1.0"/>
+	</module_sound>
+	
+	<module_sound name="leather_hit" is_2d="false" sound_category="mission_combat">
+		<variation path="leather_hit1.mp3"  weight="1.0"/>
+		<variation path="leather_hit2.mp3"  weight="1.0"/>
+		<variation path="leather_hit4.mp3"  weight="1.0"/>
+		<variation path="leather_hit5.mp3"  weight="1.0"/>
+		<variation path="leather_hit6.mp3"  weight="1.0"/>
+		<variation path="leather_hit7.mp3"  weight="1.0"/>
+	</module_sound>
+	
+	
+	<module_sound name="leather_hit_crit" is_2d="false" sound_category="mission_combat" path="leather_hit_crit.mp3" />
+
+	<module_sound name="chainmail_hit" is_2d="false" sound_category="mission_combat">
+		<variation path="chainmail_hit1.mp3"  weight="1.0"/>
+		<variation path="chainmail_hit2.mp3"  weight="1.0"/>
+		<variation path="chainmail_hit3.mp3"  weight="1.0"/>
+		<variation path="chainmail_hit4.mp3"  weight="1.0"/>
+		<variation path="chainmail_hit5.mp3"  weight="1.0"/>
+		<variation path="chainmail_hit6.mp3"  weight="1.0"/>
+		<variation path="chainmail_hit7.mp3"  weight="1.0"/>
+	</module_sound>
+	
+
+	<module_sound name="pierce_mail" is_2d="false" sound_category="mission_combat">
+		<variation path="pierce_mail1.mp3"  weight="1.0"/>
+		<variation path="pierce_mail2.mp3"  weight="1.0"/>
+		<variation path="pierce_mail3.mp3"  weight="1.0"/>
+	</module_sound>
+	
+	<module_sound name="pierce_armor" is_2d="false" sound_category="mission_combat">
+		<variation path="pierce_armor1.mp3"  weight="1.0"/>
+		<variation path="pierce_armor2.mp3"  weight="1.0"/>
+	</module_sound>
+	
+	<module_sound name="cut_armor" is_2d="false" sound_category="mission_combat">
+		<variation path="cut_armor1.mp3"  weight="1.0"/>
+		<variation path="cut_armor2.mp3"  weight="1.0"/>
+		<variation path="cut_armor3.mp3"  weight="1.0"/>
+		<variation path="cut_armor4.mp3"  weight="1.0"/>
+		<variation path="cut_armor5.mp3"  weight="1.0"/>
+	</module_sound>
+	
+	<module_sound name="cut_armor_crit" is_2d="false" sound_category="mission_combat">
+		<variation path="cut_armor_crit1.mp3"  weight="1.0"/>
+		<variation path="cut_armor_crit2.mp3"  weight="1.0"/>
+	</module_sound>
+
+	<module_sound name="cloth_pierce" is_2d="false" sound_category="mission_combat">
+		<variation path="gambeson_pierce1.mp3"  weight="1.0"/>
+		<variation path="gambeson_pierce2.mp3"  weight="1.0"/>
+		<variation path="gambeson_pierce3.mp3"  weight="1.0"/>
+		<variation path="gambeson_pierce4.mp3"  weight="1.0"/>
+		<variation path="gambeson_pierce5.mp3"  weight="1.0"/>
+		<variation path="gambeson_pierce6.mp3"  weight="1.0"/>
+		<variation path="gambeson_pierce7.mp3"  weight="1.0"/>
+	</module_sound>
+	
+	
+
+	<module_sound name="event:/mission/combat/missile/foley/crossbowrelease" is_2d="false" sound_category="mission_combat">
+		<variation path="heavycrossbow_1.mp3"  weight="2.0"/>
+		<variation path="heavycrossbow_2.mp3"  weight="2.0"/>
+		<variation path="heavycrossbow_3.mp3"  weight="2.0"/>
+		<variation path="heavycrossbow_4.mp3"  weight="2.0"/>
+		<variation path="heavycrossbow_5.mp3"  weight="1.0"/>
+		<variation path="heavycrossbow_6.mp3"  weight="1.0"/>
+		<variation path="heavycrossbow_7.mp3"  weight="1.0"/>
+		<variation path="heavycrossbow_8.mp3"  weight="1.0"/>
+		<variation path="heavycrossbow_9.mp3"  weight="1.0"/>
+		<variation path="heavycrossbow_10.mp3"  weight="1.0"/>
+	</module_sound>
+	<module_sound name="event:/mission/combat/missile/foley/lightcrossbowrelease" is_2d="false" sound_category="mission_combat">
+		<variation path="crossbow_1.mp3"  weight="2.0"/>
+		<variation path="crossbow_2.mp3"  weight="2.0"/>
+		<variation path="crossbow_3.mp3"  weight="2.0"/>
+		<variation path="crossbow_4.mp3"  weight="2.0"/>
+		<variation path="crossbow_5.mp3"  weight="1.0"/>
+		<variation path="crossbow_6.mp3"  weight="1.0"/>
+		<variation path="crossbow_7.mp3"  weight="1.0"/>
+		<variation path="crossbow_8.mp3"  weight="1.0"/>
+		<variation path="crossbow_9.mp3"  weight="1.0"/>
+		<variation path="crossbow_10.mp3"  weight="1.0"/>
+	</module_sound>
+	
+	<module_sound name="event:/mission/combat/missile/foley/bowrelease" is_2d="false" sound_category="mission_combat">
+		<variation path="bowrelease_01.mp3"  weight="2.0"/>
+		<variation path="bowrelease_02.mp3"  weight="2.0"/>
+		<variation path="bowrelease_03.mp3"  weight="2.0"/>
+		<variation path="bowrelease_04.mp3"  weight="2.0"/>
+		<variation path="bowrelease_05.mp3"  weight="2.0"/>
+		<variation path="bowrelease_06.mp3"  weight="2.0"/>
+		<variation path="bowrelease_07.mp3"  weight="2.0"/>
+		<variation path="bowrelease_08.mp3"  weight="2.0"/>
+		<variation path="bowrelease_09.mp3"  weight="1.0"/>
+		<variation path="bowrelease_10.mp3"  weight="1.0"/>
+		<variation path="bowrelease_11.mp3"  weight="1.0"/>
+		<variation path="bowrelease_12.mp3"  weight="1.0"/>
+		<variation path="bowrelease_13.mp3"  weight="1.0"/>
+		<variation path="bowrelease_14.mp3"  weight="1.0"/>
+		<variation path="bowrelease_15.mp3"  weight="1.0"/>
+		<variation path="bowrelease_16.mp3"  weight="1.0"/>
+		<variation path="bowrelease_17.mp3"  weight="1.0"/>
+	</module_sound>
+	
+	<module_sound name="event:/mission/combat/shield/broken" is_2d="false" sound_category="mission_combat" path="shield_broken.mp3" />
+	
+	
+	<module_sound name="event:/mission/combat/blunt/high" is_2d="false" sound_category="mission_combat" path="nothing.mp3" />
+	<module_sound name="event:/mission/combat/blunt/med" is_2d="false" sound_category="mission_combat" path="nothing.mp3" />
+	<module_sound name="event:/mission/combat/blunt/low" is_2d="false" sound_category="mission_combat" path="nothing.mp3" />
+	
+	<module_sound name="event:/mission/combat/cut/high" is_2d="false" sound_category="mission_combat" path="nothing.mp3" />
+	<module_sound name="event:/mission/combat/cut/low" is_2d="false" sound_category="mission_combat" path="nothing.mp3" />
+	<module_sound name="event:/mission/combat/cut/med" is_2d="false" sound_category="mission_combat" path="nothing.mp3" />
+
+	<module_sound name="event:/mission/combat/pierce/high" is_2d="false" sound_category="mission_combat" path="nothing.mp3" />
+	<module_sound name="event:/mission/combat/pierce/med" is_2d="false" sound_category="mission_combat" path="nothing.mp3" />
+	<module_sound name="event:/mission/combat/pierce/low" is_2d="false" sound_category="mission_combat" path="nothing.mp3" />
+	
+
+	
+
+
+  </module_sounds>
+
+</base>
