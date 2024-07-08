@@ -1,12 +1,8 @@
 ﻿using RealisticBattleSounds.Settings;
 using TaleWorlds.Core;
-using TaleWorlds.Engine;
-using TaleWorlds.InputSystem;
-using TaleWorlds.Library;
 using TaleWorlds.MountAndBlade;
 
 namespace RealisticBattleSounds;
-
 internal class HumanSoundsMissionBehavior : MissionBehavior
 {
     public override MissionBehaviorType BehaviorType => MissionBehaviorType.Other;
@@ -24,7 +20,7 @@ internal class HumanSoundsMissionBehavior : MissionBehavior
     {
         if (Mission.Agents.Count > 1)
         {
-            InsultRate = Mission.Agents.Count * 0.0001f;
+            InsultRate = Mission.Agents.Count * 0.00014f;
             CoughRate = Mission.Agents.Count * 0.00006f;
         }
         else
@@ -40,9 +36,12 @@ internal class HumanSoundsMissionBehavior : MissionBehavior
             if (agent == null)
                 return;
             
-            if (insultActivated && agent.AttackDirection != Agent.UsageDirection.None)
-                Mission.MakeSound(RealisticSoundsContainer.RealisticSoundsDic["event:/voice/combat/insult"], agent.Position, false, false, agent.Index, Agent.Main != null ? Agent.Main.Index : agent.Index);
-
+            if (insultActivated && agent.ImmediateEnemy != null && agent.Health > (agent.HealthLimit * 0.15f))
+            {
+                Mission.MakeSound(RealisticSoundsContainer.RealisticSoundsDic["event:/voice/combat/insult"],
+                    agent.Position, false, false, agent.Index, Agent.Main != null ? Agent.Main.Index : agent.Index);
+            }
+            
             if (RealisticSoundsContainer.RSRandom.NextFloat() <= CoughRate)
             {
                 if (agent.WalkMode || agent.HasMount)

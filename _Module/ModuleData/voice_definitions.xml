@@ -2,7 +2,7 @@
 <voice_definitions>
 
 
-  <voice_definition name="male_01" sound_and_collision_info_class="human" only_for_npcs="true" min_pitch_multiplier="0.4" max_pitch_multiplier="0.5">
+  <voice_definition name="male_01" sound_and_collision_info_class="human" only_for_npcs="true" min_pitch_multiplier="0.7" max_pitch_multiplier="0.9">
     <!--Warband-->
     <voice type="Grunt" path="event:/voice/combat/male/01/grunt" face_anim="grunt" />
     <voice type="Jump" path="event:/voice/combat/male/01/jump" face_anim="scream" />
@@ -67,7 +67,7 @@
     <voice type="MpAttack" path="event:/voice/combat/male/04/mp/attack" face_anim="attack" />
   </voice_definition>
 
-  <voice_definition name="male_02" sound_and_collision_info_class="human" only_for_npcs="true" min_pitch_multiplier="0.4" max_pitch_multiplier="0.5">
+  <voice_definition name="male_02" sound_and_collision_info_class="human" only_for_npcs="true" min_pitch_multiplier="0.7" max_pitch_multiplier="0.9">
     <!--Gordon-->
     <voice type="Grunt" path="event:/voice/combat/male/02/grunt" face_anim="grunt" />
     <voice type="Jump" path="event:/voice/combat/male/02/jump" face_anim="scream" />
@@ -132,7 +132,7 @@
     <voice type="MpAttack" path="event:/voice/combat/male/04/mp/attack" face_anim="attack" />
   </voice_definition>
 
-  <voice_definition name="male_03" sound_and_collision_info_class="human" only_for_npcs="true" min_pitch_multiplier="0.4" max_pitch_multiplier="0.5">
+  <voice_definition name="male_03" sound_and_collision_info_class="human" only_for_npcs="true" min_pitch_multiplier="0.7" max_pitch_multiplier="0.9">
     <!--Andac-->
     <voice type="Grunt" path="event:/voice/combat/male/03/grunt" face_anim="grunt" />
     <voice type="Jump" path="event:/voice/combat/male/03/jump" face_anim="scream" />
@@ -197,7 +197,7 @@
     <voice type="MpAttack" path="event:/voice/combat/male/04/mp/attack" face_anim="attack" />
   </voice_definition>
 
-  <voice_definition name="male_04" sound_and_collision_info_class="human" only_for_npcs="false" min_pitch_multiplier="0.4" max_pitch_multiplier="0.5">
+  <voice_definition name="male_04" sound_and_collision_info_class="human" only_for_npcs="false" min_pitch_multiplier="0.7" max_pitch_multiplier="0.9">
     <!-- Rick -->
     <voice type="Grunt" path="event:/voice/combat/male/04/grunt" face_anim="grunt" />
     <voice type="Jump" path="event:/voice/combat/male/04/jump" face_anim="scream" />
@@ -261,7 +261,7 @@
     <voice type="MpAttack" path="event:/voice/combat/male/04/mp/attack" face_anim="attack" />
   </voice_definition>
 
-  <voice_definition name="male_05" sound_and_collision_info_class="human" only_for_npcs="true" min_pitch_multiplier="0.4" max_pitch_multiplier="0.5">
+  <voice_definition name="male_05" sound_and_collision_info_class="human" only_for_npcs="true" min_pitch_multiplier="0.7" max_pitch_multiplier="0.9">
     <!-- Keith -->
     <voice type="Grunt" path="event:/voice/combat/male/05/grunt" face_anim="grunt" />
     <voice type="Jump" path="event:/voice/combat/male/05/jump" face_anim="scream" />
@@ -326,7 +326,7 @@
     <voice type="MpAttack" path="event:/voice/combat/male/04/mp/attack" face_anim="attack" />
   </voice_definition>
 
-  <voice_definition name="male_06" sound_and_collision_info_class="human" only_for_npcs="false" min_pitch_multiplier="0.4" max_pitch_multiplier="0.5">
+  <voice_definition name="male_06" sound_and_collision_info_class="human" only_for_npcs="false" min_pitch_multiplier="0.7" max_pitch_multiplier="0.9">
     <!-- James -->
     <voice type="Grunt" path="event:/voice/combat/male/06/grunt" face_anim="grunt" />
     <voice type="Jump" path="event:/voice/combat/male/06/jump" face_anim="scream" />
@@ -390,7 +390,7 @@
     <voice type="MpAttack" path="event:/voice/combat/male/06/mp/attack" face_anim="attack" />
   </voice_definition>
 
-  <voice_definition name="male_07" sound_and_collision_info_class="human" only_for_npcs="false" min_pitch_multiplier="0.4" max_pitch_multiplier="0.5">
+  <voice_definition name="male_07" sound_and_collision_info_class="human" only_for_npcs="false" min_pitch_multiplier="0.7" max_pitch_multiplier="0.9">
     <!-- Michael -->
     <voice type="Grunt" path="event:/voice/combat/male/07/grunt" face_anim="grunt" />
     <voice type="Jump" path="event:/voice/combat/male/07/jump" face_anim="scream" />
@@ -454,7 +454,7 @@
     <voice type="MpAttack" path="event:/voice/combat/male/07/mp/attack" face_anim="attack" />	
   </voice_definition>
   
-  <voice_definition name="male_08" sound_and_collision_info_class="human" only_for_npcs="false" min_pitch_multiplier="0.4" max_pitch_multiplier="0.5">
+  <voice_definition name="male_08" sound_and_collision_info_class="human" only_for_npcs="false" min_pitch_multiplier="0.7" max_pitch_multiplier="0.9">
     <!-- Ellis -->
     <voice type="Grunt" path="event:/voice/combat/male/08/grunt" face_anim="grunt" />
     <voice type="Jump" path="event:/voice/combat/male/08/jump" face_anim="scream" />
