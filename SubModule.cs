@@ -21,7 +21,7 @@ using TaleWorlds.CampaignSystem.Party;
 namespace RealisticBattleSounds
 {
     [HarmonyPatch(typeof(Agent), "HandleBlow")]
-    static class HandleBlowPatch
+    public static class HandleBlowPatch
     {
         private static Agent currentAgent = null;
         private static sbyte BoneIndex;
@@ -36,7 +36,7 @@ namespace RealisticBattleSounds
         private static bool isMissile;
 
         [HarmonyPrefix]
-        static void Prefix(ref Blow b, in AttackCollisionData collisionData, Agent __instance)
+        public static void Prefix(ref Blow b, in AttackCollisionData collisionData, Agent __instance)
         {
             currentAgent = __instance;
             BoneIndex = b.BoneIndex;
@@ -45,7 +45,7 @@ namespace RealisticBattleSounds
 
         [HarmonyPatch(typeof(Mission), "MeleeHitCallback")]
         [HarmonyAfter("com.basic_overhaul")]
-        static class MeleeHitCallbackPatch
+        public static class MeleeHitCallbackPatch
         {
             static void Prefix(
                 ref AttackCollisionData collisionData,
@@ -79,7 +79,7 @@ namespace RealisticBattleSounds
 
 
         [HarmonyPatch(typeof(BlowWeaponRecord), "GetHitSound")]
-        static class GetHitSoundPatch
+        public static class GetHitSoundPatch
         {
             static bool Prefix(bool isOwnerHumanoid, bool isCriticalBlow, bool isLowBlow, bool isNonTipThrust,
                 AgentAttackType attackType, DamageTypes damageType, ref int __result, BlowWeaponRecord __instance)
@@ -173,7 +173,7 @@ namespace RealisticBattleSounds
         }
 
         [HarmonyPatch(typeof(CombatSoundContainer), "SoundCodeMissionCombatPlayerhit", MethodType.Getter)]
-        static class SoundCodeMissionCombatPlayerhitPatch
+        public static class SoundCodeMissionCombatPlayerhitPatch
         {
             static void Postfix(ref int __result)
             {

@@ -3,7 +3,7 @@
         xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/BUTR/Bannerlord.XmlSchemas/master/SubModule.xsd" >
   <Id value="RealisticBattleSounds" />
   <Name value="Realistic Battle Sounds" />
-  <Version value="v3.2.0" />
+  <Version value="v3.2.1" />
   <DefaultModule value="false" />
   <ModuleCategory value="Singleplayer"/>
   <ModuleType value="Community" />

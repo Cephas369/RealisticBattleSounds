@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <base xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" type="solution">
   <outputDirectory>../MBModule/MBModule/</outputDirectory>
-  <XMLDirectory>../WOTS/Modules/RealisticBattleSoundsWH/</XMLDirectory>
+  <XMLDirectory>../WOTS/Modules/RealisticBattleSounds/</XMLDirectory>
   <ModuleAssemblyDirectory>../WOTS/bin/</ModuleAssemblyDirectory>
-  <file id="soln_voice_definitions" name="ModuleData/voice_definitions.xml" type="voice_definitions" />
   <file id="soln_module_sound" name="ModuleData/combat_sounds.xml" type="module_sound" />
   <file id="soln_module_sound" name="ModuleData/horse_sounds.xml" type="module_sound" />
   <file id="soln_module_sound" name="ModuleData/human_sounds.xml" type="module_sound" />
+  <file id="soln_voice_definitions" name="ModuleData/voice_definitions.xsl" type="voice_definitions" />
 </base>
