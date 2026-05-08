@@ -1,31 +1,24 @@
-﻿using HarmonyLib;
-using System;
-using System.Linq;
-using System.Runtime.ExceptionServices;
+﻿using System;
+using System.Reflection;
+using System.Text.RegularExpressions;
+using HarmonyLib;
+using MCM.Abstractions.Attributes;
+using MCM.Abstractions.Attributes.v2;
+using MCM.Abstractions.Base.Global;
+using RealisticBattleSounds.Settings;
 using TaleWorlds.Core;
 using TaleWorlds.Engine;
 using TaleWorlds.Library;
-using TaleWorlds.MountAndBlade;
-using System.Reflection;
-using MCM.Abstractions.Attributes.v2;
-using MCM.Abstractions.Attributes;
-using MCM.Abstractions.Base.Global;
 using TaleWorlds.ModuleManager;
-using RealisticBattleSounds.Settings;
-using TaleWorlds.CampaignSystem;
-using TaleWorlds.Engine.GauntletUI;
-using Module = TaleWorlds.MountAndBlade.Module;
-using System.Text.RegularExpressions;
-using TaleWorlds.CampaignSystem.Party;
+using TaleWorlds.MountAndBlade;
 
 namespace RealisticBattleSounds
 {
-    [HarmonyPatch(typeof(Agent), "HandleBlow")]
     public static class HandleBlowPatch
     {
-        private static Agent currentAgent = null;
-        private static sbyte BoneIndex;
-        private static bool isally;
+        private static Agent _currentAgent = null!;
+        private static sbyte _boneIndex;
+        private static bool _isAlly;
 
         private static MethodInfo GetProtectorArmorMaterialOfBone =
             AccessTools.Method(typeof(Agent), "GetProtectorArmorMaterialOfBone");
@@ -38,8 +31,8 @@ namespace RealisticBattleSounds
         [HarmonyPrefix]
         public static void Prefix(ref Blow b, in AttackCollisionData collisionData, Agent __instance)
         {
-            currentAgent = __instance;
-            BoneIndex = b.BoneIndex;
+            _currentAgent = __instance;
+            _boneIndex = b.BoneIndex;
         }
 
 
@@ -62,18 +55,19 @@ namespace RealisticBattleSounds
             {
                 if (colReaction == MeleeCollisionReaction.ContinueChecking)
                 {
-                    isally = true;
+                    _isAlly = true;
                     return;
                 }
-                else if (RBSSettings.Instance?.DisableAllyCollision == true && attacker != null && victim != null && !attacker.IsEnemyOf(victim) && victim.IsHuman)
+
+                if (RBSSettings.Instance?.DisableAllyCollision == true && attacker != null && victim != null && !attacker.IsEnemyOf(victim) && victim.IsHuman)
                 {
 
-                    isally = true;
+                    _isAlly = true;
                     ___collisionResult.SetValue(collisionData, 0);
                     colReaction = MeleeCollisionReaction.ContinueChecking;
                 }
                 else
-                    isally = false;
+                    _isAlly = false;
             }
         }
 
@@ -86,13 +80,13 @@ namespace RealisticBattleSounds
             {
                 isMissile = RBSSettings.Instance?.DisableFarMissileSounds == true &&
                             (__instance.IsMissile || __instance.IsAmmo || __instance.IsRanged);
-                if (attackType == AgentAttackType.Standard && (!isally || isMissile))
+                if (attackType == AgentAttackType.Standard && (!_isAlly || isMissile))
                 {
                     ArmorComponent.ArmorMaterialTypes armor;
-                    if (!currentAgent.IsHuman)
+                    if (!_currentAgent.IsHuman)
                         try
                         {
-                            armor = currentAgent.SpawnEquipment[EquipmentIndex.HorseHarness].Item.ArmorComponent
+                            armor = _currentAgent.SpawnEquipment[EquipmentIndex.HorseHarness].Item.ArmorComponent
                                 .MaterialType;
                         }
                         catch (Exception)
@@ -101,8 +95,8 @@ namespace RealisticBattleSounds
                         }
                     else
                     {
-                        armor = (ArmorComponent.ArmorMaterialTypes)GetProtectorArmorMaterialOfBone.Invoke(currentAgent,
-                            new object[] { BoneIndex });
+                        armor = (ArmorComponent.ArmorMaterialTypes)GetProtectorArmorMaterialOfBone.Invoke(_currentAgent,
+                            new object[] { _boneIndex });
                     }
 
                     int hitSound;
@@ -112,49 +106,49 @@ namespace RealisticBattleSounds
                         case DamageTypes.Cut:
                             hitSound = armor == ArmorComponent.ArmorMaterialTypes.Leather
                                 ? (isCriticalBlow
-                                    ? RealisticSoundsContainer.RealisticSoundsDic["leather_hit_crit"]
-                                    : RealisticSoundsContainer.RealisticSoundsDic["leather_hit"])
+                                    ? RealisticSoundsContainer.RealisticSoundsDic["rbs/leather/hit/crit"]
+                                    : RealisticSoundsContainer.RealisticSoundsDic["rbs/leather/hit"])
                                 : (armor == ArmorComponent.ArmorMaterialTypes.Chainmail
-                                    ? RealisticSoundsContainer.RealisticSoundsDic["chainmail_hit"]
+                                    ? RealisticSoundsContainer.RealisticSoundsDic["rbs/chainmail/hit"]
                                     : (armor == ArmorComponent.ArmorMaterialTypes.Plate
                                         ? (isCriticalBlow
-                                            ? RealisticSoundsContainer.RealisticSoundsDic["cut_armor_crit"]
-                                            : RealisticSoundsContainer.RealisticSoundsDic["cut_armor"])
+                                            ? RealisticSoundsContainer.RealisticSoundsDic["rbs/plate/cut/crit"]
+                                            : RealisticSoundsContainer.RealisticSoundsDic["rbs/plate/cut"])
                                         : (armor == ArmorComponent.ArmorMaterialTypes.Cloth
-                                            ? RealisticSoundsContainer.RealisticSoundsDic["leather_hit"]
-                                            : RealisticSoundsContainer.RealisticSoundsDic["flesh_cut"])));
+                                            ? RealisticSoundsContainer.RealisticSoundsDic["rbs/leather/hit"]
+                                            : RealisticSoundsContainer.RealisticSoundsDic["rbs/flesh/cut"])));
                             break;
                         case DamageTypes.Pierce:
                             hitSound = armor == ArmorComponent.ArmorMaterialTypes.Leather
                                 ? (isCriticalBlow
-                                    ? RealisticSoundsContainer.RealisticSoundsDic["leather_hit_crit"]
-                                    : RealisticSoundsContainer.RealisticSoundsDic["leather_hit"])
+                                    ? RealisticSoundsContainer.RealisticSoundsDic["rbs/leather/hit/crit"]
+                                    : RealisticSoundsContainer.RealisticSoundsDic["rbs/leather/hit"])
                                 : (armor == ArmorComponent.ArmorMaterialTypes.Chainmail
-                                    ? RealisticSoundsContainer.RealisticSoundsDic["pierce_mail"]
+                                    ? RealisticSoundsContainer.RealisticSoundsDic["rbs/chainmail/pierce"]
                                     : (armor == ArmorComponent.ArmorMaterialTypes.Plate
-                                        ? RealisticSoundsContainer.RealisticSoundsDic["pierce_armor"]
+                                        ? RealisticSoundsContainer.RealisticSoundsDic["rbs/plate/pierce"]
                                         : (armor == ArmorComponent.ArmorMaterialTypes.Cloth
                                             ? (isCriticalBlow
-                                                ? RealisticSoundsContainer.RealisticSoundsDic["flesh_pierce_crit"]
-                                                : RealisticSoundsContainer.RealisticSoundsDic["cloth_pierce"])
+                                                ? RealisticSoundsContainer.RealisticSoundsDic["rbs/flesh/pierce/crit"]
+                                                : RealisticSoundsContainer.RealisticSoundsDic["rbs/cloth/pierce"])
                                             : (isCriticalBlow
-                                                ? RealisticSoundsContainer.RealisticSoundsDic["flesh_pierce_crit"]
-                                                : RealisticSoundsContainer.RealisticSoundsDic["flesh_pierce"]))));
+                                                ? RealisticSoundsContainer.RealisticSoundsDic["rbs/flesh/pierce/crit"]
+                                                : RealisticSoundsContainer.RealisticSoundsDic["rbs/flesh/pierce"]))));
                             break;
                         case DamageTypes.Blunt:
                             hitSound = armor == ArmorComponent.ArmorMaterialTypes.Leather
                                 ? (isCriticalBlow
-                                    ? RealisticSoundsContainer.RealisticSoundsDic["leather_hit_crit"]
-                                    : RealisticSoundsContainer.RealisticSoundsDic["leather_blunt"])
+                                    ? RealisticSoundsContainer.RealisticSoundsDic["rbs/leather/hit/crit"]
+                                    : RealisticSoundsContainer.RealisticSoundsDic["rbs/leather/blunt"])
                                 : (armor == ArmorComponent.ArmorMaterialTypes.Chainmail
-                                    ? RealisticSoundsContainer.RealisticSoundsDic["chainmail_hit"]
+                                    ? RealisticSoundsContainer.RealisticSoundsDic["rbs/chainmail/hit"]
                                     : (armor == ArmorComponent.ArmorMaterialTypes.Plate
                                         ? (isCriticalBlow
-                                            ? RealisticSoundsContainer.RealisticSoundsDic["blunt_armor_crit"]
-                                            : RealisticSoundsContainer.RealisticSoundsDic["blunt_armor"])
+                                            ? RealisticSoundsContainer.RealisticSoundsDic["rbs/plate/blunt/crit"]
+                                            : RealisticSoundsContainer.RealisticSoundsDic["rbs/plate/blunt"])
                                         : (armor == ArmorComponent.ArmorMaterialTypes.Cloth
-                                            ? RealisticSoundsContainer.RealisticSoundsDic["leather_blunt"]
-                                            : RealisticSoundsContainer.RealisticSoundsDic["flesh_blunt"])));
+                                            ? RealisticSoundsContainer.RealisticSoundsDic["rbs/leather/blunt"]
+                                            : RealisticSoundsContainer.RealisticSoundsDic["rbs/flesh/blunt"])));
                             break;
 
                         case DamageTypes.Invalid:
@@ -186,6 +180,9 @@ namespace RealisticBattleSounds
 
     public class SubModule : MBSubModuleBase
     {
+        private Harmony _harmony = null!;
+
+        private bool _isAgentPatchDone = false;
         public override void OnMissionBehaviorInitialize(Mission mission)
         {
             base.OnMissionBehaviorInitialize(mission);
@@ -203,8 +200,21 @@ namespace RealisticBattleSounds
         protected override void OnSubModuleLoad()
         {
             base.OnSubModuleLoad();
-            Harmony harmony = new Harmony("com.realistic_battle_sounds");
-            harmony.PatchAll();
+            _harmony = new Harmony("com.realistic_battle_sounds");
+            _harmony.PatchAll();
+        }
+
+        public override void OnBeforeMissionBehaviorInitialize(Mission mission)
+        {
+            base.OnBeforeMissionBehaviorInitialize(mission);
+
+            if (!_isAgentPatchDone)
+            {
+                _harmony.Patch(AccessTools.Method(typeof(Agent), "HandleBlow"),
+                AccessTools.Method(typeof(HandleBlowPatch), "Prefix"));
+
+                _isAgentPatchDone = true;
+            }
         }
     }
 }

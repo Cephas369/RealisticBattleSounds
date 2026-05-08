@@ -15,22 +15,22 @@ namespace RealisticBattleSounds
         {
             "event:/voice/combat/cough",
             "event:/voice/combat/insult",
-            "blunt_armor",
-            "blunt_armor_crit",
-            "cloth_pierce",
-            "cut_armor",
-            "cut_armor_crit",
-            "flesh_blunt",
-            "flesh_cut",
-            "flesh_pierce",
-            "flesh_pierce_crit",
-            "flesh_hit_crit",
-            "leather_blunt",
-            "leather_hit",
-            "leather_hit_crit",
-            "chainmail_hit",
-            "pierce_armor",
-            "pierce_mail"
+            "rbs/plate/blunt",
+            "rbs/plate/blunt/crit",
+            "rbs/plate/cut",
+            "rbs/plate/cut/crit",
+            "rbs/plate/pierce",
+            "rbs/cloth/pierce",
+            "rbs/flesh/blunt",
+            "rbs/flesh/cut",
+            "rbs/flesh/pierce",
+            "rbs/flesh/pierce/crit",
+            "rbs/flesh/crit",
+            "rbs/leather/blunt",
+            "rbs/leather/hit",
+            "rbs/leather/hit/crit",
+            "rbs/chainmail/hit",
+            "rbs/chainmail/pierce"
         };
         public static Dictionary<string, int> RealisticSoundsDic = null;
         public static void StoreDic()
